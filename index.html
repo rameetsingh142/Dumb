@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUMB Foundation</title>
+    <link rel="icon" href="cube.svg" />
+</head>
+
+<style>
+    body{
+        background: black;
+        margin: 0;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .logo{
+        
+    }
+
+    .text{
+        color: rgba(255, 154, 0, 1);
+        font-size: 30px;
+        transform: rotate(180deg);
+        text-align: center;
+        align-items: center;
+    }
+    .text-mobile{
+        display: none;
+    }
+    .text-mobile2{
+        display: none;
+    }
+    .twitter{
+        cursor: pointer;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .logo{
+            height: 40vh;
+            width: 70vw;
+        }
+
+        .text{
+            display: none;
+        }
+        .text-mobile{
+            display: flex;
+            color: rgba(255, 154, 0, 1);
+            font-size: 30px;
+            /* transform: rotate(180deg); */
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+            text-align: center;
+            align-items: center;
+            max-width: 70vw;
+        }
+        .text-mobile2{
+            display: flex;
+            color: rgba(255, 154, 0, 1);
+            font-size: 30px;
+            /* transform: rotate(180deg); */
+            text-align: center;
+            align-items: center;
+            max-width: 70vw;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <span class="text-mobile">We are the DUMBFoundation</span>
+        <img class="logo" src="cube.svg" alt=""/>
+        <span class="text">DUMBFoundation  for the advancement of smart contracts</span>
+        <span class="text-mobile2"> For the advancement of smart contracts</span>
+        <img class="twitter" src="twitter.svg" alt="twitter"/>
+    </div>
+</body>
+</html>
